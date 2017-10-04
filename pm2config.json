@@ -1,0 +1,10 @@
+{
+    "apps": [
+        {
+            "name": "ZEC STRATUM PROXY",
+            "script": "./proxy.js",
+            "watch": true,
+            "log_date_format": "YYYY-MM-DD HH:mm:ss.SSS"
+        }
+    ]
+}
