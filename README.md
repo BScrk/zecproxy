@@ -1,8 +1,13 @@
-# Description 
-This is a Stratum Proxy for Zcash using JSON-RPC.
 ![alt text](https://buyingzcash.com/images/logo.png)
 
-Originally developed by Cryptense SAS. Working with [flypool](http://zcash.flypool.org/) and [nanopool](http://zec.nanopool.org)
+# Description 
+This is a Stratum Proxy for Zcash using JSON-RPC.
+
+Originally developed by Cryptense SAS. 
+
+Working with [flypool](http://zcash.flypool.org/) and [nanopool](http://zec.nanopool.org).
+
+Successfully tested with [EWBF's Zcash CUDA miner. 0.3.4b](https://bitcointalk.org/index.php?topic=1707546.0) and several GPUs Rigs.
 
 ![alt text](http://g.recordit.co/8oX3Pj77BN.gif)
 
