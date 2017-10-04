@@ -40,7 +40,7 @@ Originally developed by Cryptense SAS. Working with [flypool](http://zcash.flypo
 
 
 # Installation and Start
-* git clone git@bitbucket.org:cryptense/zec_stratum.git
+* git clone git@github.com:BScrk/zecproxy.git
 * cd zec_stratum
 * npm install
 * node proxy.js
