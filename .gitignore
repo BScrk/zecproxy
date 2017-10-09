@@ -1,0 +1,10 @@
+# See reference at https://github.com/github/gitignore/ for more configurations
+ 
+# dependencies built by NPM update
+node_modules/
+ 
+# IntelliJ
+*.iml
+*.ipr
+*.iws
+.idea/
