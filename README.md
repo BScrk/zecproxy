@@ -6,7 +6,7 @@ This is a Stratum Proxy for Zcash using JSON-RPC.
 Originally developed by the [Cryptense](http://www.cryptense.com) team.
 
 Working with [Dwarfpool](http://dwarfpool.com/zec) and [Nanopool](http://zec.nanopool.org).
-Also tried on [Miningfpeed](https://pool.miningspeed.com/) on Zclassic / BitcoinZ / ZenCash coins. 
+Also tried on [Miningspeed](https://pool.miningspeed.com/) on Zclassic / BitcoinZ / ZenCash coins. 
 Some issues with [flypool](http://zcash.flypool.org/), better not use with this pool.
 
 Successfully tested with [EWBF's Zcash CUDA miner. 0.3.4b](https://bitcointalk.org/index.php?topic=1707546.0) and [dstm's ZCash Nvidia Miner v0.5 (Linux)](https://bitcointalk.org/index.php?topic=2021765.0) with several GPUs Rigs.
