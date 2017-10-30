@@ -5,7 +5,9 @@ This is a Stratum Proxy for Zcash using JSON-RPC.
 
 Originally developed by the [Cryptense](http://www.cryptense.com) team.
 
-Working with [flypool](http://zcash.flypool.org/) and [nanopool](http://zec.nanopool.org).
+Working with [Dwarfpool](http://dwarfpool.com/zec) and [Nanopool](http://zec.nanopool.org).
+Also tried on [Miningspeed](https://pool.miningspeed.com/) on Zclassic / BitcoinZ / ZenCash coins. 
+Some issues with [flypool](http://zcash.flypool.org/), better not use with this pool.
 
 Successfully tested with [EWBF's Zcash CUDA miner. 0.3.4b](https://bitcointalk.org/index.php?topic=1707546.0) and [dstm's ZCash Nvidia Miner v0.5 (Linux)](https://bitcointalk.org/index.php?topic=2021765.0) with several GPUs Rigs.
 
@@ -25,17 +27,18 @@ Successfully tested with [EWBF's Zcash CUDA miner. 0.3.4b](https://bitcointalk.o
 * Central Wallet configuration, miners doesn't need wallet as username
 * Bypasse worker_id for detailed statistic and per rig monitoring - not supported on flypool yet / working on nanopool
 * PM2 support
+* SSL / TCP protocols support
 
 
 # How it Works
 ```
-   Pool A <---+                        +-------------+ Rig1 / PC1
- (Active)      |                       |
-               |                       +-------------+ Rig2 / PC2
-               |                       |
-  Pool B <---+-----StratumProxy  <-----+-------------+ Rig3 / PC3
-(FailOver)                             |
-                                       +-------------+ Rig4 / PC4                                      
+  Pool A < ---+                         +------------- > Rig 1 / Worker 1
+ (Active)     |                         |
+              |                         +------------- > Rig 2 / Worker 2
+              |                         |
+  Pool B < ---+--- > StratumProxy < ----+------------- > Rig 3 / Worker 3
+(FailOver)                              |
+                                        +------------- > Rig 4 / Worker 4       
 ```
 
 
