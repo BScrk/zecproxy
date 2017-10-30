@@ -60,7 +60,30 @@ The proxy will automatically listen on port 8000 for miners.
 
 # Configuration
 * all configs in file config.json to change settings. 
-
+```
+{
+  "wallet": "<Your wallet>",
+  "password" : "<Pool password or just 'x'>",
+  "port": <Proxy port>,
+  "proxy_name" : "<Proxy default name>" (shown on the pool if enable_worker_id set to false),
+  "enable_worker_id": true|false (send worker name to the pool or not), 
+  "pool" : { "host" : "<HOST>"  , "port" : <PORT>, "ssl" : true|false },
+  "pool_failover_enabled": true|false,
+  "pool_failover" : [  { "host" : "<HOST>"  , "port" : <PORT>, "ssl" : true|false },
+                       { "host" : "<HOST>"  , "port" : <PORT>, "ssl" : true|false },
+                       { "host" : "<HOST>"  , "port" : <PORT>, "ssl" : true|false }],
+  "restart_delay": <delay before restarting the proxy on error>,
+  "on_rejected_share": {
+                      "strategy" : "<On Rejected Share strategy>" (continue / kill / restart),
+                      "threshold" : <number of rejected shares before applying strategy>
+                    },
+  "debug" : true|false
+}
+```
+### On Rejected Share strategies :
+* `continue` : ignore and continue
+* `restart` : Restart the proxy (without pm2)
+* `kill` : Kill the process (hard restart using pm2)
 
 # Miners command line 
 

@@ -12,5 +12,10 @@
                       { "host" : "us1-zcash.flypool.org"  , "port" : 3333 , "ssl" : false },
                       { "host" : "cn1-zcash.flypool.org"  , "port" : 3333 , "ssl" : false },
                       { "host" : "asia1-zcash.flypool.org", "port" : 3333 , "ssl" : false }],
-   "debug" : false
+  "restart_delay": 10,
+  "on_rejected_share": {
+                      "strategy" : "restart",
+                      "threshold" : 5
+                    },
+  "debug" : false
 }
