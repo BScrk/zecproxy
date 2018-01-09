@@ -1,6 +1,6 @@
 {
   "name": "zecproxy",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Zcash Stratum Proxy",
   "main": "proxy.js",
   "scripts": {},
