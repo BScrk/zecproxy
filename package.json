@@ -3,7 +3,9 @@
   "version": "1.0.8",
   "description": "Zcash Stratum Proxy",
   "main": "proxy.js",
-  "scripts": {},
+  "scripts": {
+    "start": "node proxy.js"
+  },
   "dependencies": {
     "chalk": "^2.1.0",
     "date-and-time": "^0.5.0",

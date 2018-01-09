@@ -53,7 +53,7 @@ Successfully tested with [EWBF's Zcash CUDA miner. 0.3.4b](https://bitcointalk.o
 * `git clone https://github.com/BScrk/zecproxy.git`
 * `cd zec_stratum`
 * `npm install`
-* `node proxy.js`
+* `npm start`
 
 The proxy will automatically listen on port 8000 for miners.
 
