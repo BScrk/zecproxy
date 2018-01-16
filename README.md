@@ -101,14 +101,16 @@ exemple : `./miner --server $192.168.0.10 --port 8000 --user miner_1 --pass "x"`
 
 
 # Docker
+The project is now dockerized for more convenience :)
 
 ## Official container ...
 Find the official image on the Docker Hub [bscrk/zecproxy](https://hub.docker.com/r/bscrk/zecproxy/) :
 
+* `docker pull bscrk/zecproxy`
 * `git clone https://github.com/BScrk/zecproxy.git`
 * `cd zec_stratum`
 * edit config file
-* `docker build . -t zecproxy`
+* `docker run -d --name=zecproxy -p 8000:8000 -v $(pwd)/config.json:/usr/src/app/config.json bscrk/zecproxy:latest`
 
 
 ## ... or make your own
