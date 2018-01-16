@@ -100,6 +100,26 @@ exemple : `./miner --server 192.168.0.10 --user miner_1 --pass "x" --port 8000 -
 exemple : `./miner --server $192.168.0.10 --port 8000 --user miner_1 --pass "x"`
 
 
+# Docker
+
+## Official container ...
+Find the official image on the Docker Hub [bscrk/zecproxy](https://hub.docker.com/r/bscrk/zecproxy/) :
+
+* `git clone https://github.com/BScrk/zecproxy.git`
+* `cd zec_stratum`
+* edit config file
+* `docker build . -t zecproxy`
+
+
+## ... or make your own
+Setup and make your own image :
+* `git clone https://github.com/BScrk/zecproxy.git`
+* `cd zec_stratum`
+* edit config file
+* `docker build . -t zecproxy`
+* `docker run -p 8000:8000 -d zecproxy`
+
+
 # Donations
 * ETH:  0x1212eF39d945aB9A9568Aa5a72c5CBA99Bbe46c1
 * ZEC:  t1YAdYcnKR2ozADWPUvmgnDgf86gfsxQEEE

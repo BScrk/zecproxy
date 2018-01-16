@@ -3,6 +3,10 @@
   "version": "1.0.8",
   "description": "Zcash Stratum Proxy",
   "main": "proxy.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BScrk/zecproxy.git"
+  } ,
   "scripts": {
     "start": "node proxy.js"
   },
