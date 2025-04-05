@@ -145,6 +145,6 @@ This software is provides AS-IS without any warranties of any kind.
 
 
 # Protocol Documentation
-* https://slushpool.com/help/manual/stratum-protocol
+* https://pool.braiins.com/help/manual/stratum-protocol
 * https://github.com/ctubio/php-proxy-stratum/wiki/Stratum-Mining-Protocol
 * https://github.com/slushpool/poclbm-zcash/wiki/Stratum-protocol-changes-for-ZCash
